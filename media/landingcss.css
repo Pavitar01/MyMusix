@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+  background:linear-gradient(to right,blue,black);
+
+  
+    
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+.parent{
+
+  width: 95%;
+  height: 398vh;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius:10px ;
+  transition: .6s ease-in-out;
+  border-color: black;
+  cursor: pointer;
+ 
+}
+
+.parent:hover
+{
+  box-shadow: 0px 0px 15px 10px rgb(223, 219, 219);
+}
+.nav img{
+    
+width:60px;
+margin-left:1px;
+float: left;
+
+}
+.nav p{
+  float: left;
+  margin-left:5px;
+  font-weight: 900;
+  font-size: 20px;
+
+}
+
+
+.menu ul{
+  font-family: 'Poppins', sans-serif;
+   list-style: none;
+   display: flex;
+   margin-left: 400px;
+   text-decoration: none;
+}
+
+.menu ul li{
+  
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+ 
+}
+.menu ul li a{
+  color:rgb(13, 13, 83);
+text-decoration: none;
+transition: .3s linear;
+
+}
+
+.menu ul li a:hover{
+  color:rgb(62, 62, 215);
+text-decoration: none;
+
+
+}
+
+
+ a:after{
+content:"";
+position: absolute;
+background-color: rgb(62, 62, 215);
+height: 3px;
+width: 0;
+left:0;
+bottom: -10px;
+transition:.3s;
+}
+
+ a:after{
+width: 100%;
+}
+
+.img .text h2{
+  margin-top: 85px;
+  margin-left:370px;
+  font-size: 38px;
+  font-weight: 800;
+
+
+}
+
+.img .text h1{
+  margin-top: -30px;
+  margin-left:350px;
+  font-size: 80px;
+  font-weight: 800;
+  -webkit-text-stroke:1px black;
+  -webkit-text-fill-color:transparent;
+}
+
+
+.img .text .ul {
+  
+color: black;
+  font-weight: 100;
+  margin-top: -30px;
+  margin-left: 240px;
+}
+.img .text .ul li{
+  margin-left: 20px;
+}
+
+.img .text .ul2 {
+  
+color: black;
+  font-weight: 100;
+  margin-top: -5px;
+  margin-left: 240px;
+}
+
+.img .text .ul2 li{
+  margin-left: 20px;
+}
+
+.img .text .btn{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 390px;
+  font-size: 19px;
+  color: white;
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(to left,blue,black);
+  transition: 1s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
+  
+
+}
+
+
+.img .text .btn:hover{
+  background: linear-gradient(to left,black,blue);
+
+
+
+}
+
+
+.icons .icon1{
+  position: absolute;
+  width: 60px;
+  margin-left: 10px;
+}
+
+
+.icons .icon2{
+  
+  position: absolute;
+  width: 60px;
+  margin-top: 400px;
+  margin-left: 490px;
+}
+
+
+.menu ul .cat .list{
+display: none;
+position: absolute;
+background-color: white;
+margin-top: 15px;
+margin-left: -15px;
+transition: .3s linear;
+
+}
+
+.Singer{
+  display: none;
+ margin-left: -400px;
+ margin-top: 50px;
+  width: 400px;
+  border-radius: 450px;
+}
+
+/* div about */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- div mood----------------------------- */
+
+
+#mood{
+  margin-top: 560px;
+  height:100vh;
+  width:100%;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+#f1{
+  margin-top: -300px;
+}
+
+
+
+.choose{
+  height: 30vh;
+  width: 100%;
+  margin-top: 70px;
+}
+  
+  
+  .choose .h{
+  
+  margin-top: 20px;
+  font-size: 15px;
+  font-style: oblique;
+  text-align: center;
+  }
+  
+  .choose p{
+    margin-top: -10px;
+    font-size: 15px;
+  }
+  /* scroll */
+  .scroll{
+    display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  }
+
+  .cards{
+  float: left;
+  margin-top:10px;
+  margin-left: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  background:transparent;
+  transition: .3s linear;
+  }
+  
+  .cards img{
+  border-radius: 20px;
+  }
+  .cards:hover{
+  box-shadow: 1px 1px 10px 6px gray;
+  }
+
+  
+/*   
+  .scroll .cards p{
+    display: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 500px;
+  width: 50px;
+  margin-left: 70px;
+  margin-top:100px
+  } */
+
+
+
+
+
+  .choose2{
+    height: 100vh;
+    width: 100%;
+    margin-top: 70px;
+  }
+    
+    
+    .choose2 .h{
+    
+    margin-top: 20px;
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+    }
+    
+    .choose2 p{
+      margin-top: -10px;
+      font-size: 15px;
+    }
+    /* scroll */
+    .scroll2{
+      display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  
+    }
+
+ 
+    .cards2{
+    float: left;
+    margin-top:10px;
+    margin-left: 20px;
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    background:transparent;
+    transition: .3s linear;
+    }
+    
+    .cards2 img{
+      width: 100px;
+      height: 100px;
+    border-radius: 50px;
+    }
+    .cards2:hover{
+    box-shadow: 1px 1px 10px 6px gray;
+    }
+
+    .more{
+      float: left;
+      margin-top:10px;
+      margin-left: 20px;
+      width: 180px;
+      height: 180px;
+      border-radius: 20px;
+      background:transparent;
+      transition: .3s linear;
+      }
+  
+      .scroll2 .more p{
+  
+        margin-top: 60px;
+     
+      }
+      .more img{
+        border-radius: 50px;
+        }
+
+
+
+
+
+
+
+  /* feedback */
+
+
+
+
+  
+
+
+  #feedback{
+border-radius: 30px;
+height: 80vh;
+width: 97%;
+margin-left: 20px;
+
+background-color: lightgray;
+    
+  }
+
+  /* right div */
+  .right{
+    float: right;
+  }
+
+  .right img{
+  width: 400px;
+  height: 400px;
+  margin-right: 100px;
+}
+
+/* left div */
+
+.left{
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(57, 57, 87);
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.left ul li{
+  position: relative;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  font-weight: 400;
+  color: gray;
+
+}
+
+
+/* feedback form */
+
+.feedback{
+  border-radius: 30px;
+  height: 70vh;
+  width: 97%; 
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+fieldset{
+  background: linear-gradient(to left,blue,black);
+  color: white;
+  height: 300px; 
+  width: 600px;
+  margin-left: -30px;
+  border-radius: 20px;
+}
+.feedback fieldset p{
+
+margin-top: 10px;
+font-size: 20px;
+margin-left: -500px;
+
+}
+
+.feedback fieldset input{
+  position: absolute;
+  margin-left: -180px;
+  margin-top: -50px;
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 10px;
+
+}
+
+.feedback fieldset textarea{
+  position:absolute;
+  height: 70px;
+  width: 450px;
+  resize: none;
+  margin-top: -50px;
+  margin-left: -178px;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.feedback fieldset button{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: none  ;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  transition: .5s ease-in-out;
+}
+.feedback fieldset button:hover{
+  color: cyan;
+}
+
+
+
+
+/* footer */
+
+.footer {
+  position: fixed;
+  margin-left: 25px;
+  bottom: 0;
+  width: 90%;
+  color: blue;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: azure;
+
+}
+
+.footer ul{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+
+}
+.footer ul li{
+  background-color:transparent;
+  margin-left: 30px;
+  font-size: 20px;
+  transition: .3 ease-in-out;
+}
+.footer ul li:hover{
+color:rgb(48, 66, 66);
+
+}

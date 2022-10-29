@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ress.css">
+    <link rel="stylesheet" href="preloader.css">
+
+    
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+    <link rel = "icon" href = "icon/icon.png" type = "image/x-icon">
+    <title>Mymusic.com</title>
+</head>
+<body   onload="myfun()">
+    <!-- preloader -->
+<div id="loading">
+
+    <div class="equalizer">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- /preloader -->
+
+    <div class="parent">
+
+        <!-- left -->
+        <div class="menu">
+            <img src="icon/icon.png"><h3>MyMusic</h3>
+            <ul class="ul1">
+                <li style="background-color: rgba(222, 203, 203,.3);width:200px;border-radius:10px"><i class="bi bi-music-note-list"></i>YOUR FM</li>
+                <li><i class="bi bi-hearts"></i>FOR YOU</li>
+                <li><i class="bi bi-browser-edge"></i>BROWSE</li>
+                <li><i class="bi bi-clipboard-data-fill"></i>CHARTS</li>
+            </ul>
+            <ul class="ul2">
+                <li style="color: #CBCBCB;">My Library</li>
+                <li>Favourite Songs</li>
+                <li>Albums</li>
+                <li>Artists</li>
+                <li>Downloads</li>
+                <li>History</li>
+                <li style="color: #CBCBCB;">My Playlist<i style="margin-left: 80px;" class="bi bi-download"></i></li>
+            </ul>
+
+        </div>
+
+
+
+
+
+        <!-- right -->
+        <div class="music">
+          <div class="fixed">
+            <div class="feedback">
+                <p>
+                    <i class="bi bi-clipboard-data-fill" style="margin:10px;font-size: 20px;cursor: pointer;" id="feedback" onclick="feedback()"></i>feedback
+                    <input type="search" placeholder="Search.." ><i class="bi bi-search" style="font-size: 20px;margin-left:10px;cursor: pointer;"></i>
+                </p>
+
+            
+            </div>
+          </div>
+
+          <!-- right move -->
+
+          <div class="move">
+
+            <!-- Player -->
+            <div class="music-img">
+                <h3 class="title">title.mp3</h3>
+       
+                <marquee width="20%" direction="left" height="10px" class="Artist" style="text-align: center;margin-left:200px;color: white;">
+                    Artist name
+                </marquee>
+                
+                <div class="imgg"><img src="icon/icon.png" alt="no img" class="track"></div>
+                <ul class="icons">
+                    <li><i class="bi bi-heart" style="margin: 10px;"></i>Like </li>
+                    <li><i class="bi bi-share" style="margin: 10px;"></i>Share</li>
+                    <li><i class="bi bi-chat-dots" style="margin: 10px;"></i>Comments</li>
+                </ul>
+
+                <div class="volume">
+                    <p id="vol_show">100</p>
+                    <p><i class="bi bi-volume-up-fill" id="vol_icon" onclick="mutesound()"></i></p>
+                    <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume1">
+            </div>
+            </div>
+
+
+            <!-- playlist -->
+    <div class="playlist">
+
+        <h4><span style="color: #CBCBCB;">Your </span> Daily Music</h4>
+        <ul class="song-list">
+            <li onclick="li1()" style="margin-top: 50px;"><span class="span1"><p>1.  Dil</p></span><span class="span2"><p>05:22</p></span></li>
+            <li onclick="li2()" ><span class="span1"><p>2. Ashqon Ki Tarah</p></span><span class="span2"><p>03:12</p></span></li>
+            <li onclick="li3()" ><span class="span1"><p>3. Do You Know</p></span><span class="span2"><p>03:39</p></span></li>
+            <li onclick="li4()" ><span class="span1"><p>4. Heatwaves</p></span><span class="span2"><p>03:55</p></span></li>
+            <li onclick="li5()" ><span class="span1"><p>5. Phir Na Aisi Raat</p></span><span class="span2"><p>04:44</p></span></li>
+            <li onclick="li6()" ><span class="span1"><p>6. Mashup</p></span><span class="span2"><p>06:30</p></span></li>
+             </ul>
+    </div>
+
+
+<!-- feedback -->
+<div class="form">
+    <p><i class="bi bi-arrow-left" onclick="back()"></i> <span style="margin-left: 100px">Give your feedback </span><i class="bi bi-emoji-smile-fill"></i></p>
+
+<h5>Your opinion matters! Share feedback on how we can improve your experience with us..😉</h5>
+
+    <textarea placeholder="Let us know what you think and our team will get back to you ASAP."></textarea>
+
+<button type="submit" class="btn">Submit</button>
+
+</div>
+
+
+    
+
+
+          <!-- Explore -->
+
+            <div class="more">
+
+                <h4 style="color: white;font-weight: 700;margin-top:100px">Explore More Music</h4>
+                <ul class="ul3">
+                    <li style="color: #CBCBCB; list-style: none;"><p style=" font-size: 15px;font-weight: 700;margin-top: 30px;">Daily</p>
+                        <hr style="margin-top: 20px"/>
+                    <ul class="nest">
+
+                        <li style="margin-left:10px"><i class="bi bi-broadcast" style="margin: 20px"></i>Your Daily Mix</li>
+                        <li><i class="bi bi-broadcast" style="margin: 20px"></i>New Release</li>
+                    </ul>
+                    <hr width="550px"/>
+                    </li>
+
+                </ul>
+
+            <!--  -->
+            
+            <ul class="ul3">
+                <li style="color: #CBCBCB; list-style: none;"><p style=" font-size: 15px;font-weight: 700;margin-top: 30px;">For you</p>
+                    <hr style="margin-top: 20px"/>
+                <ul class="nest">
+
+                    <li style="margin-left:10px"><i class="bi bi-broadcast" style="margin: 20px"></i>Lo-fi</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Hindi</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Workout</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>sleep</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Sad</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Romantic</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Nature  </li>
+
+                </ul>
+            <hr/>
+                
+                </li>
+
+            </ul>
+            
+            <!--  -->
+
+            <ul class="ul3">
+                <li style="color: #CBCBCB; list-style: none;"><p style=" font-size: 15px;font-weight: 700;margin-top: 30px;">Genre</p>
+                    <hr style="margin-top: 20px"/>
+                <ul class="nest">
+
+                    <li style="margin-left:10px"><i class="bi bi-broadcast" style="margin: 20px"></i>Bollywood</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Pop</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Hip-hop</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Bengali</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Bhojpuri</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>Rajasthani</li>
+                    <li><i class="bi bi-broadcast" style="margin: 20px"></i>odia</li>
+
+                </ul>
+            <hr/>
+                
+                </li>
+
+            </ul>
+            
+            <!--  -->
+
+
+  <!--  -->
+
+  <ul class="ul3">
+    <li style="color: #CBCBCB; list-style: none;"><p style=" font-size: 15px;font-weight: 700;margin-top: 30px;">Mood</p>
+       
+        <hr style="margin-top: 20px"/>
+
+    <ul class="nest">
+
+        <li style="margin-left:10px"><i class="bi bi-broadcast" style="margin: 20px"></i>Romance</li>
+        <li><i class="bi bi-broadcast" style="margin: 20px"></i>Sad</li>
+
+    </ul>
+<hr width="550px"/>
+    
+    </li>
+
+</ul>
+
+<!--  -->
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+   <!-- musix play -->
+
+<div class="play">
+     <div class="play-img">
+        <img src="icon/icon.png" alt="no img" class="track" width="100%" height="100%">
+    
+    </div>
+    <!--  
+ <div class="tit" style="color: white;"> 
+    <p class="title" style="margin-left: 10px" >title.mp3</p>
+    
+       
+    <marquee width="20%" direction="left" height="10px" class="Artist" style="text-align: center;margin-left:10px;">
+        Artist name
+        </marquee>
+</div> -->
+
+    <div class="play-button">
+    <button onclick="pre_song()" id="pre"><i class="bi bi-skip-backward-circle"></i></button>
+    <button onclick="justplay()"  id="play1"><i class="bi bi-play-circle-fill"></i></button>
+    <button onclick="next_song()" id="next"><i class="bi bi-skip-forward-circle"></i></button>
+    <button id="auto" onclick="autoplayy()" style="color: white;margin-left: 40px;"><i class="bi bi-repeat"></i></button>
+</div>
+    <div class="duration" style="margin-top: 50px;">
+        <input type="range" min="0" max="100" value="0" id="dur_slider" onchange="change_dur()">
+    </div>
+
+</div>
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+<!-- preloader -->
+<script>
+
+ var preloader=document.getElementById('loading');
+
+
+ function myfun()
+ {
+    preloader.style.display='none';
+}
+
+
+</script>
+
+</body>
+</html>

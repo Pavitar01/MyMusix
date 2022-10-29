@@ -1,0 +1,49 @@
+mutiple css classes.
+
+
+lower class hai  high priority
+
+
+<style>
+.main{
+color:white;
+background-color:crimson;
+}
+
+.main1{
+font-size:20px;
+background-color:skyblue;
+}
+
+
+</style>
+
+<body>
+<div class="main main2">hello</div> // here font-size is 20px and bg color is skyblue
+</body>
+
+
+
+////////////////////////////////
+
+
+container class
+
+
+1. container {
+
+the container class provides a reponsive fixed width container;
+
+}
+
+
+2. container-fluid-class
+{
+
+the container-fluid provides a full width container, spanning the entire width of  the viewport 
+
+}
+
+
+
+
